@@ -1,14 +1,140 @@
 <!DOCTYPE HTML>
-<!--
-	Tushar Bharadwaj
-	
--->
 <html>
 	<head>
-		<title>Tushar Bharadwaj</title>
+		<title>Tushar Bharadwaj | Remote Sensing &amp; GIS Lead</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Tushar Bharadwaj — Remote Sensing &amp; GIS Lead with 7+ years building geospatial AI systems for climate, carbon, and forest monitoring." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* ── Skill bars ─────────────────────────────────── */
+			.skill-block { margin: 0.55em 0; }
+			.skill-label {
+				display: flex;
+				justify-content: space-between;
+				font-size: 0.85em;
+				margin-bottom: 5px;
+				color: #555;
+			}
+			.skill-track {
+				background: rgba(0,0,0,0.08);
+				border-radius: 4px;
+				height: 7px;
+			}
+			.skill-fill {
+				height: 7px;
+				border-radius: 4px;
+				background: linear-gradient(90deg, #3aafa9, #2d7dd2);
+			}
+
+			/* ── Project cards (Current Work) ───────────────── */
+			.work-card {
+				background: #fff;
+				border: 1px solid #dde4e4;
+				border-radius: 10px;
+				padding: 1.6em 1.4em 1.4em;
+				margin-bottom: 1.2em;
+				text-align: left;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+			}
+			.work-card h3 {
+				margin: 0 0 0.25em;
+				font-size: 1em;
+				color: #2b3a3a;
+			}
+			.work-card .org-meta {
+				font-size: 0.78em;
+				color: #7a9494;
+				margin-bottom: 0.75em;
+			}
+			.work-card p {
+				font-size: 0.82em;
+				line-height: 1.65;
+				color: #444;
+				margin: 0;
+			}
+			.tag-row {
+				margin-top: 0.9em;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.35em;
+			}
+			.tag {
+				background: #eaf4f4;
+				color: #2a7a7a;
+				font-size: 0.68em;
+				padding: 3px 9px;
+				border-radius: 4px;
+				border: 1px solid #bde0e0;
+				white-space: nowrap;
+			}
+
+			/* ── Experience timeline ────────────────────────── */
+			.exp-item {
+				border-left: 3px solid #3aafa9;
+				padding-left: 1.1em;
+				margin-bottom: 1.4em;
+				text-align: left;
+			}
+			.exp-item h4 {
+				font-size: 0.95em;
+				color: #2b3a3a;
+				margin: 0 0 0.15em;
+			}
+			.exp-item .exp-meta {
+				font-size: 0.78em;
+				color: #7a9494;
+				margin-bottom: 0.4em;
+			}
+			.exp-item p {
+				font-size: 0.82em;
+				line-height: 1.6;
+				color: #555;
+				margin: 0;
+			}
+
+			/* ── Resume / alt button ────────────────────────── */
+			a.button-outline {
+				display: inline-block;
+				padding: 0.65em 1.6em;
+				border: 2px solid #3aafa9;
+				color: #3aafa9;
+				border-radius: 5px;
+				font-size: 0.85em;
+				font-weight: 600;
+				text-decoration: none;
+				transition: background 0.2s, color 0.2s;
+				margin-left: 0.6em;
+			}
+			a.button-outline:hover {
+				background: #3aafa9;
+				color: #fff;
+			}
+
+			/* ── Contact list ───────────────────────────────── */
+			.contact-list {
+				list-style: none;
+				padding: 0;
+				margin: 1.2em auto 0;
+				display: inline-block;
+				text-align: left;
+			}
+			.contact-list li {
+				padding: 0.4em 0;
+				font-size: 0.9em;
+				color: #444;
+			}
+			.contact-list li a { color: #2a7a7a; }
+			.contact-list li .icon { margin-right: 0.5em; color: #3aafa9; }
+
+			/* ── Portfolio item subtitle ────────────────────── */
+			article.item header p {
+				font-size: 0.78em;
+				color: #666;
+				margin: 0.3em 0 0;
+				line-height: 1.5;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,19 +145,20 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/avataar.jpeg" alt="" /></span>
+							<span class="image avatar48"><img src="images/avataar.jpeg" alt="Tushar Bharadwaj" /></span>
 							<h1 id="title">Tushar Bharadwaj</h1>
-							<p>Remote Sensing and GIS Specialist</p>
+							<p>Remote Sensing &amp; GIS Lead</p>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#Cartography" id="Cartography-link"><span class="icon solid fa-th">Cartography</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+								<li><a href="#top"        id="top-link"        ><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#current"    id="current-link"    ><span class="icon solid fa-laptop-code">Current Work</span></a></li>
+								<li><a href="#portfolio"  id="portfolio-link"  ><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#Cartography" id="Cartography-link"><span class="icon solid fa-map">Cartography</span></a></li>
+								<li><a href="#about"      id="about-link"      ><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#contact"    id="contact-link"    ><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
 
@@ -41,11 +168,9 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/tusharbharadwaj" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Tushar684B" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto:ttushar684@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 
 				</div>
@@ -60,194 +185,323 @@
 						<div class="container">
 
 							<header>
-								<h2 class="">Hi! I'm <strong>Tushar Bharadwaj</strong>, Remote Sensing and <br />
-								GIS Specialist at <a href="https://www.thryve.earth">Thryve earth</a>.</h2>
-								<p>I specialize in GIS analysis, carbon modeling, land cover classification, <br />
-									and spatial data analysis using tools like Google Earth Engine and Python.</p>
+								<h2>Hi, I'm <strong>Tushar Bharadwaj</strong><br />
+								Remote Sensing &amp; GIS Lead</h2>
+								<p>7+ years building geospatial AI systems for climate, carbon, and forest monitoring.<br />
+								Currently at <a href="https://www.thryve.earth">Thryve Earth</a> and <a href="https://www.plant-for-the-planet.org">Plant-for-the-Planet</a>.</p>
 							</header>
-							
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Portfolio</a>
+								<a href="#current" class="button scrolly">See What I'm Building</a>
 							</footer>
 
 						</div>
 					</section>
 
+				<!-- Current Work -->
+					<section id="current" class="two">
+						<div class="container">
+
+							<header>
+								<h2>What I'm Building</h2>
+							</header>
+
+							<p>Active production systems at the intersection of geospatial AI, carbon science, and full-stack engineering.</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<div class="work-card">
+										<h3>Thryve Earth Platform</h3>
+										<div class="org-meta">Thryve Earth &nbsp;·&nbsp; Mar 2024 – Present</div>
+										<p>Full-stack carbon project management platform. GIS eligibility engine runs 5 Google Earth Engine analyses (land cover, slope, deforestation history, protected area overlap, peat/wetland detection) and auto-generates PDF reports. Python carbon modeling engine translates internal Excel model and projects tCO₂e within 0.25% accuracy. Farmer onboarding with dual-level field verification and 8-role RBAC.</p>
+										<div class="tag-row">
+											<span class="tag">React + FastAPI</span>
+											<span class="tag">PostGIS</span>
+											<span class="tag">Google Earth Engine</span>
+											<span class="tag">GCP</span>
+											<span class="tag">REDD+ / ARR</span>
+											<span class="tag">VCS</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<div class="work-card">
+										<h3>TFFF Watch Tool &amp; EUDR Tracer</h3>
+										<div class="org-meta">Plant-for-the-Planet &nbsp;·&nbsp; Sep 2023 – Present</div>
+										<p>Built the Tropical Forest Forever Facility (TFFF) Watch Tool from concept to production — ML-driven biomass monitoring with time-series change detection. Designed the EUDR Compliance system (Tracer) integrating deforestation datasets, land-use change records, and commodity supply-chain data. Automated fire and flood monitoring pipelines.</p>
+										<div class="tag-row">
+											<span class="tag">ML Pipelines</span>
+											<span class="tag">EUDR Compliance</span>
+											<span class="tag">Time-Series</span>
+											<span class="tag">Forest Monitoring</span>
+											<span class="tag">Python</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<div class="work-card">
+										<h3>Farm Boundaries India</h3>
+										<div class="org-meta">Open-source Tool</div>
+										<p>Python tool to extract farm field boundaries across all Indian states using the Fields of the World (FTW) dataset. Queries per-tile GeoParquet files from S3 via DuckDB, clips to named region bounding boxes, and exports GeoJSON/Shapefile for 15+ Indian states including Punjab, Karnataka, Maharashtra, and more.</p>
+										<div class="tag-row">
+											<span class="tag">Python</span>
+											<span class="tag">DuckDB</span>
+											<span class="tag">GeoPandas</span>
+											<span class="tag">S3 / GeoParquet</span>
+											<span class="tag">GeoJSON</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
 				<!-- Portfolio -->
-					<section id="portfolio" class="two">
+					<section id="portfolio" class="three">
 						<div class="container">
 
 							<header>
 								<h2>Portfolio</h2>
 							</header>
 
-							<p>Below are some of the key projects I've worked on, showcasing my expertise in remote sensing, GIS, and web app development.</p>
+							<p>GEE applications and research tools built for carbon prospecting, biodiversity monitoring, and environmental analysis.</p>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://ee-ttushar684.projects.earthengine.app/view/plant-for-ghana" class="image fit"><img src="images/Biomass.jpg" alt="" /></a>
+										<a href="https://ee-ttushar684.projects.earthengine.app/view/plant-for-ghana" class="image fit" target="_blank"><img src="images/Biomass.jpg" alt="Biomass Assessment Model" /></a>
 										<header>
 											<h3>Biomass Assessment Model</h3>
+											<p>GEDI + SAR + optical ML pipeline for above-ground biomass estimation. Built for Plant-for-Ghana afforestation project.</p>
 										</header>
 									</article>
 									<article class="item">
-										<a href="https://ttushar684.users.earthengine.app/view/tree-classification" class="image fit"><img src="images/treecanopy.jpg" alt="" /></a>
+										<a href="https://ttushar684.users.earthengine.app/view/tree-classification" class="image fit" target="_blank"><img src="images/treecanopy.jpg" alt="Urban Tree Classification" /></a>
 										<header>
-											<h3>Machine Learning based urban tree species classification</h3>
+											<h3>Urban Tree Species Classification</h3>
+											<p>CV-based ML classifier for coniferous/deciduous segregation using LiDAR + multispectral imagery. Case study: Montreal, Canada.</p>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://ee-ttushar684.projects.earthengine.app/view/prospectingtoolbrazil" class="image fit"><img src="images/prospecting.jpg" alt="" /></a>
+										<a href="https://ee-ttushar684.projects.earthengine.app/view/prospectingtoolbrazil" class="image fit" target="_blank"><img src="images/prospecting.jpg" alt="Carbon Project Prospecting Tool" /></a>
 										<header>
-											<h3>Prospecting Tool for carbon projects</h3>
+											<h3>Carbon Project Prospecting Tool</h3>
+											<p>ML-based ARR/REDD+ suitability scoring for Brazil — aggregating land cover, slope, deforestation history, and protected area data.</p>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/fire.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/fire.jpg" alt="Forest Fire Severity Analysis" /></a>
 										<header>
-											<h3>Forest fire severity & diversity change analysis</h3>
+											<h3>Forest Fire Severity &amp; Diversity Change</h3>
+											<p>Pre/post-fire severity mapping and biodiversity change detection using dNBR and spectral diversity indices.</p>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://drive.google.com/drive/folders/1nw1yyuhpMUyjtNOcjl7CI86t0BO64uXP?usp=sharing" class="image fit"><img src="images/other.jpg" alt="" /></a>
+										<a href="https://drive.google.com/drive/folders/1nw1yyuhpMUyjtNOcjl7CI86t0BO64uXP?usp=sharing" class="image fit" target="_blank"><img src="images/other.jpg" alt="Other Work" /></a>
 										<header>
-											<h3>Other work</h3>
+											<h3>Other Work</h3>
+											<p>Additional GIS analyses, spatial dashboards, and remote sensing research outputs available on Google Drive.</p>
 										</header>
 									</article>
-									<!-- <article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article> -->
 								</div>
 							</div>
 
 						</div>
 					</section>
-								<!-- Cartography -->
-								<section id="Cartography" class="three">
-									<div class="container">
-			
+
+				<!-- Cartography -->
+					<section id="Cartography" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Cartography</h2>
+							</header>
+
+							<p>Thematic and analytical maps produced for environmental research and spatial storytelling.</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/Indiariver.jpg" class="image fit" target="_blank"><img src="images/Indiariver.jpg" alt="Rivers and Catchment Area in India" /></a>
 										<header>
-											<h2>Cartography</h2>
+											<h3>Rivers &amp; Catchment Areas — India</h3>
 										</header>
-			
-										<p>Explore some maps.</p>
-			
-										<div class="row">
-											<div class="col-4 col-12-mobile">
-												<article class="item">
-													<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/Indiariver.jpg" class="image fit"><img src="images/Indiariver.jpg" alt="" /></a>
-													<header>
-														<h3>Rivers and Catchment Area in India</h3>
-													</header>
-												</article>
-												<article class="item">
-													<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/DemKerala.jpg" class="image fit"><img src="images/DemKerala.jpg" alt="" /></a>
-													<header>
-														<h3>Map of Kerala, India due to water level rise</h3>
-													</header>
-												</article>
-											</div>
-											<div class="col-4 col-12-mobile">
-												<article class="item">
-													<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/gujarat.jpg" class="image fit"><img src="images/gujarat.jpg" alt="" /></a>
-													<header>
-														<h3>Map of Gujarat, India due to water level rise</h3>
-													</header>
-												</article>
-												<article class="item">
-													<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/1.png" class="image fit"><img src="images/1.png" alt="" /></a>
-													<header>
-														<h3>Ganga River Flood Plains</h3>
-													</header>
-												</article>
-											</div>
-											<div class="col-4 col-12-mobile">
-												<article class="item">
-													<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/ch4power.jpg" class="image fit"><img src="images/ch4power.jpg" alt="" /></a>
-													<header>
-														<h3>CH4 Emission by Power Industries 2021</h3>
-													</header>
-												</article>
-												<article class="item">
-													<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/other.jpg" class="image fit"><img src="images/other.jpg" alt="" /></a>
-													<header>
-														<h3>Flights Around the globe</h3>
-													</header>
-												</article>
-											</div>
-										</div>
-			
-									</div>
-								</section>
+									</article>
+									<article class="item">
+										<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/DemKerala.jpg" class="image fit" target="_blank"><img src="images/DemKerala.jpg" alt="Kerala Sea Level Rise" /></a>
+										<header>
+											<h3>Sea Level Rise Impact — Kerala</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/gujarat.jpg" class="image fit" target="_blank"><img src="images/gujarat.jpg" alt="Gujarat Sea Level Rise" /></a>
+										<header>
+											<h3>Sea Level Rise Impact — Gujarat</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/1.png" class="image fit" target="_blank"><img src="images/1.png" alt="Ganga River Flood Plains" /></a>
+										<header>
+											<h3>Ganga River Flood Plains</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/ch4power.jpg" class="image fit" target="_blank"><img src="images/ch4power.jpg" alt="CH4 Emissions" /></a>
+										<header>
+											<h3>CH₄ Emissions — Power Industries 2021</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://raw.githubusercontent.com/Tushar684B/tushar684b.github.io/main/images/other.jpg" class="image fit" target="_blank"><img src="images/other.jpg" alt="Global Flight Routes" /></a>
+										<header>
+											<h3>Global Flight Routes</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
 
 				<!-- About Me -->
-					<section id="about" class="four">
+					<section id="about" class="two">
 						<div class="container">
 
 							<header>
 								<h2>About Me</h2>
 							</header>
 
-							<a href="" class="image featured"><img src="images/1.png" alt="" /></a>
+							<p>GIS &amp; Remote Sensing Lead with 7+ years building ML-driven geospatial systems for climate, carbon, and forest monitoring. I work across the full stack — from satellite data pipelines and GEE-based analysis to production web platforms and carbon MRV systems aligned with VCS and Gold Standard.</p>
 
-							<p>I am a GIS & Remote Sensing Specialist with extensive experience in carbon registry-based GIS analysis, carbon modeling, land cover classification, 
-								and spatial data analysis for environmental monitoring. My background includes working on projects involving machine learning, artificial intelligence, and computer vision for remote sensing applications.</p>
+							<p style="margin-top: 1em;">
+								<a href="resume/Tushar_Bharadwaj_Resume_March_2026.pdf" class="button" download>Download Resume</a>
+								<a href="https://www.linkedin.com/in/tusharbharadwaj" class="button-outline" target="_blank">LinkedIn Profile</a>
+							</p>
 
-					<h3>Skills & Software</h3>
-					
-						<p>Google Earth Engine, QGIS, ArcGIS (5/5)<br>
-							Geo-Spatial Data Analysis (5/5)<br>
-							Python, JavaScript, & MS-Office (4.5/5)<br>
-							Computer Vision and Deep learning for Remote Sensing (4/5)<br>
-							Artificial Intelligence & Machine Learning in Remote Sensing (4/5)<br>
-							Tableau, Mapbox, Leaflet, LeafMap, GitHub & SQL (3/5)<br>
-							Statistics- R Language (3/5)<br>
-							Probabilistic Modelling (2/5)</p>
-					
+							<!-- Skills -->
+							<h3 style="margin-top: 2em; text-align: left;">Skills</h3>
+							<div class="row" style="margin-top: 1em;">
+								<div class="col-6 col-12-mobile">
+									<div class="skill-block">
+										<div class="skill-label"><span>Google Earth Engine</span><span>95%</span></div>
+										<div class="skill-track"><div class="skill-fill" style="width:95%"></div></div>
+									</div>
+									<div class="skill-block">
+										<div class="skill-label"><span>Python — ML &amp; Geospatial</span><span>90%</span></div>
+										<div class="skill-track"><div class="skill-fill" style="width:90%"></div></div>
+									</div>
+									<div class="skill-block">
+										<div class="skill-label"><span>QGIS / ArcGIS</span><span>90%</span></div>
+										<div class="skill-track"><div class="skill-fill" style="width:90%"></div></div>
+									</div>
+									<div class="skill-block">
+										<div class="skill-label"><span>Carbon MRV (REDD+, ARR, VCS)</span><span>85%</span></div>
+										<div class="skill-track"><div class="skill-fill" style="width:85%"></div></div>
+									</div>
+									<div class="skill-block">
+										<div class="skill-label"><span>Deep Learning / Computer Vision</span><span>80%</span></div>
+										<div class="skill-track"><div class="skill-fill" style="width:80%"></div></div>
+									</div>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<div class="skill-block">
+										<div class="skill-label"><span>FastAPI / PostgreSQL / PostGIS</span><span>80%</span></div>
+										<div class="skill-track"><div class="skill-fill" style="width:80%"></div></div>
+									</div>
+									<div class="skill-block">
+										<div class="skill-label"><span>React / JavaScript</span><span>75%</span></div>
+										<div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+									</div>
+									<div class="skill-block">
+										<div class="skill-label"><span>GCP / Cloud MLOps</span><span>75%</span></div>
+										<div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+									</div>
+									<div class="skill-block">
+										<div class="skill-label"><span>SAR / LiDAR Analysis</span><span>75%</span></div>
+										<div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+									</div>
+									<div class="skill-block">
+										<div class="skill-label"><span>Statistics / R</span><span>60%</span></div>
+										<div class="skill-track"><div class="skill-fill" style="width:60%"></div></div>
+									</div>
+								</div>
+							</div>
 
-					<h3>Education</h3>
-					<p>
-						Post-Graduation Diploma in Data Science, IIIT Bangalore (2019 - 2020)<br>
-						Master of Technology in Geotechnical Engineering and Underground Structures, NIT Hamirpur (2015 - 2017)<br>
-						Bachelor of Technology in Civil Engineering, Poornima Institute of Engineering and Technology (2010 - 2014)<br>
-					</p>
+							<!-- Experience -->
+							<h3 style="margin-top: 2.5em; text-align: left;">Experience</h3>
+							<div style="margin-top: 1.2em;">
+								<div class="exp-item">
+									<h4>Thryve Earth — Remote Sensing &amp; GIS Lead (Contract)</h4>
+									<div class="exp-meta">Mar 2024 – Present &nbsp;·&nbsp; Bangalore, India</div>
+									<p>Own ML strategy and productization of carbon and geospatial intelligence tools. Architect scalable GEE pipelines for biomass estimation, land-use change, and carbon accounting aligned with VCS &amp; Gold Standard. Lead full-stack platform development with React, FastAPI, PostGIS, and GCP.</p>
+								</div>
+								<div class="exp-item">
+									<h4>Plant-for-the-Planet — Remote Sensing Data Scientist (Part-time)</h4>
+									<div class="exp-meta">Sep 2023 – Present</div>
+									<p>End-to-end ownership of ML and geospatial intelligence. Led the TFFF Watch Tool from concept to deployment. Built EUDR Tracer compliance system and automated fire, flood, and afforestation monitoring pipelines.</p>
+								</div>
+								<div class="exp-item">
+									<h4>IIT Roorkee — Research Fellow (ML &amp; Computer Vision)</h4>
+									<div class="exp-meta">Apr 2022 – Mar 2024</div>
+									<p>Built ML and CV pipelines for urban forestry using multispectral and LiDAR data. Developed tree canopy extraction and biomass estimation models. Created interactive dashboards using GEE and JavaScript.</p>
+								</div>
+								<div class="exp-item">
+									<h4>Govt. College of Technology &amp; Engineering — Assistant Professor (GIS &amp; RS)</h4>
+									<div class="exp-meta">Sep 2019 – Feb 2022</div>
+									<p>Taught ML-driven geospatial analytics and Python-based data analysis. Supervised applied ML and remote sensing student projects.</p>
+								</div>
+								<div class="exp-item">
+									<h4>Lovely Professional University — Assistant Professor</h4>
+									<div class="exp-meta">Aug 2017 – Apr 2019</div>
+									<p>Delivered Civil Engineering courses and supervised research on soil stabilization using agri-waste. Contributed to curriculum modernization.</p>
+								</div>
+							</div>
 
-					<h3>Publications</h3>
-					<ul>
-						<li><a href="https://doi.org/10.1201/9781003324720-15">Bharadwaj, T., Kumar, A., & Khare, S. (2023). Smart agriculture platforms: Case studies.</a></li>
-						<li><a href="https://event.fourwaves.com/geobon-2023/abstracts/ac056043-205d-4a05-84f5-ff72b0ada7fe">Khare, S., Bharadwaj, T., Wood, S. L. R., Theron, J., Filotas, E., & Gonzalez, A. (2023). "Machine learning and satellite-based multi-scale segregation of coniferous and deciduous trees: a case study for Montreal city, Canada." GEO BON Global Conference: Monitoring Biodiversity for Action. (Link)</a></li>
-					</ul>
+							<!-- Education -->
+							<h3 style="margin-top: 2.5em; text-align: left;">Education</h3>
+							<p style="text-align: left; margin-top: 0.8em; line-height: 2;">
+								GIS &amp; Remote Sensing Courses, <strong>IIT Roorkee</strong> &nbsp;(9.5/10)<br />
+								Post Graduate Diploma in Data Science, <strong>IIIT Bangalore</strong> &nbsp;(3.12/4.0)<br />
+								M.Tech — Geotechnical Engineering, <strong>NIT Hamirpur</strong> &nbsp;(7.6/10)<br />
+								B.Tech — Civil Engineering, <strong>Rajasthan Technical University</strong> &nbsp;(64.8%)
+							</p>
+
+							<!-- Publications -->
+							<h3 style="margin-top: 2.5em; text-align: left;">Publications</h3>
+							<ul style="text-align: left; margin-top: 0.8em; line-height: 2;">
+								<li><a href="https://doi.org/10.1201/9781003324720-15">Bharadwaj, T., Kumar, A., &amp; Khare, S. (2023). Smart agriculture platforms: Case studies. <em>Technological Prospects and Social Applications of Society 5.0</em>, CRC Press.</a></li>
+								<li><a href="https://event.fourwaves.com/geobon-2023/abstracts/ac056043-205d-4a05-84f5-ff72b0ada7fe">Khare, S., Bharadwaj, T., et al. (2023). Machine learning and satellite-based multi-scale segregation of coniferous and deciduous trees. <em>GEO BON Global Conference</em>.</a></li>
+							</ul>
 
 						</div>
 					</section>
 
 				<!-- Contact -->
-					<section id="contact" class="four">
+					<section id="contact" class="three">
 						<div class="container">
 
 							<header>
 								<h2>Contact</h2>
 							</header>
 
-							<p>If you would like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
-							<ul style="list-style-type: none; padding: 0;">
-								<li>Phone: +91-9882878776</li>
-								<li>Email: <a href="mailto:ttushar684@gmail.com">ttushar684@gmail.com</a></li>
-								<li>LinkedIn: <a href="www.linkedin.com/in/tusharbharadwaj">Profile</a></li>
-								<!-- <li>GitHub: <a href="your_github_repository_url">Repository</a></li> -->
-							</ul>
-							
+							<p>Open to remote sensing, geospatial AI, and carbon tech roles. Feel free to reach out.</p>
 
-							
+							<ul class="contact-list">
+								<li><span class="icon solid fa-map-marker-alt"></span>Bangalore, India</li>
+								<li><span class="icon solid fa-phone"></span>+91-9882878776</li>
+								<li><span class="icon solid fa-envelope"></span><a href="mailto:ttushar684@gmail.com">ttushar684@gmail.com</a></li>
+								<li><span class="icon brands fa-linkedin"></span><a href="https://www.linkedin.com/in/tusharbharadwaj" target="_blank">linkedin.com/in/tusharbharadwaj</a></li>
+								<li><span class="icon brands fa-github"></span><a href="https://github.com/Tushar684B" target="_blank">github.com/Tushar684B</a></li>
+							</ul>
 
 						</div>
 					</section>
@@ -259,7 +513,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li>
+						<li>&copy; 2026 Tushar Bharadwaj. All rights reserved.</li>
 					</ul>
 
 			</div>
